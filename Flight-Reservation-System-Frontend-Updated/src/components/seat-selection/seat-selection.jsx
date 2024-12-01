@@ -107,7 +107,8 @@ const SeatSelection = () => {
         setOpenModal(false);
     };
 
-    const isSeatBooked = (seat) => seat && seat.booked !== 0 && seat.passengerId !== -1;
+    console.log('seat:', selectedSeat);
+    const isSeatBooked = (seat) => seat && seat.booked == 1;
 
     const getClassFromSeatNumber = (seatNumber) => {
         if (seatNumber.startsWith('F')) {
@@ -154,8 +155,11 @@ const SeatSelection = () => {
                                 .map((row, rowIndex) => (
                                     <div key={rowIndex} className={`seat-${classType.toLowerCase()}-row`}>
                                         {row.map((seat) => (
+                                            // print seat 
+
                                             <div
                                                 key={seat.seatNumber}
+
                                                 className={`seat ${selectedSeat === seat.seatNumber ? 'selected' : ''
                                                     } ${isSeatBooked(seat) ? 'booked' : ''}`}
                                                 onClick={() =>
