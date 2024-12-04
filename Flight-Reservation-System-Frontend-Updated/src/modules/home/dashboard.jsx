@@ -14,7 +14,7 @@ const Dashboard = () => {
 
   return (
     <div>
-      <Typography variant="h5">{`Welcome to BonVoyage`}</Typography>
+      <Typography variant="h5">{`Welcome to Skylink Airways`}</Typography>
       <div>
         <TextField
           label="Search Flights"

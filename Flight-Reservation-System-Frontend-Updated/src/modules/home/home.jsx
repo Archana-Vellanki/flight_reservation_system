@@ -18,6 +18,7 @@ const Help = lazy(() => import("../../modules/help/help"));
 const Admin = lazy(() => import("../admin/admin"));
 const AdminEditFlight = lazy(() => import("../admin/AdminEditFlight"));
 const AdminAddFlight = lazy(() => import("../admin/AdminAddFlight"));
+const LoginSignup = lazy(() => import("../../modules/loginpage/loginpage"));
 
 const Home = () => {
   const { userInfoSession } = useUserInfoSession();
@@ -143,6 +144,7 @@ const Home = () => {
                       path={`/add-flight/`}
                       component={AdminAddFlight}
                     />
+                     <Route path="/loginpage" component={LoginSignup} />
                   </Switch>
                 </Suspense>
               </ErrorBoundaries>

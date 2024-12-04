@@ -29,7 +29,7 @@ const Confirmation = () => {
   return (
     <div className="confirmation-container">
       <Typography variant="h5" color="black">
-        Your flight is now set for an unforgettable journey with Bon Voyage Flights. 
+        Your flight is now set for an unforgettable journey with Skylink Airways.
       </Typography>
       <br/>
       <Typography variant="h6" color="black">

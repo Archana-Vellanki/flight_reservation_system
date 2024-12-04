@@ -13,6 +13,7 @@ import {
   Typography,
   Paper,
 } from "@material-ui/core";
+import { useUserInfoSession } from "../../components/header/user-context";
 
 import { Autocomplete } from "@material-ui/lab";
 import { validateSearch } from "../../services/global-services";
@@ -68,14 +69,27 @@ const FlightSearch = (props) => {
   const history = useHistory();
   const flightList = useSelector((state) => state.flightSearch.searchList);
   const classes = useStyles();
+  const { userInfo } = useUserInfoSession();
 
-  // On Page Load
-  useEffect(() => {
-    // Reset Flight List
-    dispatch({
-      type: actions.RESET_FLIGHT_LIST,
-    });
-  }, []);
+    // On Page Load
+    useEffect(() => {
+      // Check if data is stored in localStorage and load it
+      const savedData = JSON.parse(localStorage.getItem("flightSearchData"));
+      if (savedData) {
+        setSource(savedData.source);
+        setDest(savedData.dest);
+        setDeptDate(savedData.deptDate);
+        setReturnDate(savedData.returnDate);
+        setSelectTrip(savedData.selectTrip);
+      }
+
+  //     // Reset Flight List
+  //     dispatch({
+  //       type: actions.RESET_FLIGHT_LIST,
+  //     });
+    }, []);
+
+
 
   const handleSelectTrip = (e) => {
     setSelectTrip(e.target.value);
@@ -155,7 +169,19 @@ const FlightSearch = (props) => {
     setDest(null);
     setDeptDate("");
     setReturnDate("");
+    localStorage.removeItem("flightSearchData"); // Clear from localStorage
   };
+
+     // Function to handle sign-out
+      const handleSignOut = () => {
+        // Clear the user session data
+        setUserInfo(null); // Assuming `setUserInfo` clears the session
+        localStorage.removeItem("flightSearchData"); // Clear flight search data from localStorage
+        handleClearFields(); // Reset all fields
+
+
+        history.push("/loginpage"); // Redirect to login page after sign-out
+      };
 
   return (
     <Paper elevation={0} className={classes.paper}>

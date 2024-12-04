@@ -36,11 +36,24 @@ const Header = ({ tabs, onShowTab }) => {
     },
   });
 
-  const handleLogout = () => {
-    removeUserInfoSession();
-    setIsLoggedIn(false);
-    history.push("/");
-  };
+//   const handleLogout = () => {
+//     removeUserInfoSession();
+//     setIsLoggedIn(false);
+//     history.push("/");
+//   };
+
+     const handleLogout = () => {
+         // Clear session and user information
+         removeUserInfoSession();
+         setIsLoggedIn(false);
+         setUserInfo(null);
+
+         // Clear any flight search data (if stored in localStorage)
+         localStorage.removeItem("flightSearchData"); // Clears flight search data stored in localStorage
+
+         // Redirect to the homepage or login page
+         history.push("/");
+       };
 
   const handleManage = () => {
     history.push("/manage");
@@ -139,7 +152,7 @@ const Header = ({ tabs, onShowTab }) => {
         </a>
 
         <Typography variant="h6" style={{ marginRight: "50px" }}>
-          {`BonVoyage`}
+          {`Skylink`}
         </Typography>
         <Tabs
           value={currentTab}
@@ -172,8 +185,11 @@ const Header = ({ tabs, onShowTab }) => {
           </div>
         ) : (
           <Button
-            style={{ backgroundColor: "black", color: "white" }}
-            onClick={() => login()}
+//             style={{ backgroundColor: "black", color: "white" }}
+//             onClick={() => login()}
+             style={{ backgroundColor: "black", color: "white" }}
+                        component={Link}
+                        to="/loginpage"
           >
             Login/Sign Up
           </Button>

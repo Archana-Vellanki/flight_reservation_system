@@ -1,8 +1,6 @@
-// About.js
-
 import React from 'react';
 import './about.css';
-import bonVoyageImage from './BonVoyage.jpeg'; // Import your image file
+import bonVoyageImage from './BonVoyage.jpeg';  // Replace with your actual logo/image file
 
 const About = () => {
   return (
@@ -11,23 +9,23 @@ const About = () => {
         {/* First Row */}
         <div className="row-container">
           <div className="text-container">
-            <h1 className="about-header">About Us: Bon Voyage</h1>
+            <h1 className="about-header">About Us: Skylink Airways</h1>
             <p className="welcome-text">
-              Welcome to Bon Voyage – Your Gateway to Seamless Journeys!
+              Welcome to Skylink Airways – Your Pathway to Elevated Travel!
             </p>
             <p className="intro-text">
-              At Bon Voyage, we don't just book flights; we elevate your travel
-              experience to new heights. Embark on a journey with us, where your
-              comfort, convenience, and satisfaction take flight alongside you.
-              We are more than just a flight reservation system; we are your
-              travel companion, committed to making every voyage unforgettable.
+              At Skylink Airways, we go beyond providing flights. We create a
+              travel experience where comfort, innovation, and exceptional service
+              come together to redefine the way you fly. Join us as we connect
+              you to the world with precision, passion, and unparalleled care.
             </p>
           </div>
+          {/* Uncomment to include an image */}
           {/* <div className="image-container">
             <img
-              src={bonVoyageImage}
-              alt="Bon Voyage"
-              className="bon-voyage-image"
+              src={skylinkImage}
+              alt="Skylink Airways"
+              className="skylink-image"
               style={{ width: '200px', height: 'auto' }}
             />
           </div> */}
@@ -37,38 +35,45 @@ const About = () => {
         <div className="text-container">
           <h2 className="story-header">Our Story</h2>
           <p className="story-text">
-            Born out of a passion for seamless travel and a commitment to
-            redefining the way you explore the world, Bon Voyage is more than a
-            platform; it's a vision. We started with a simple idea: to create a
-            flight reservation system that mirrors the joy, excitement, and
-            wonder of your journeys.
+            Skylink Airways was born from a vision to redefine air travel. With
+            a focus on innovation, connectivity, and world-class service, we
+            began our journey to bridge the gap between destinations and dreams.
+            Today, we are proud to serve millions of passengers who trust us to
+            deliver safe, seamless, and memorable journeys.
           </p>
           <div className="separator"></div>
-          <h1 className="story-header">What Sets Us Apart?</h1>
+
+          <h1 className="story-header">What Makes Skylink Airways Unique?</h1>
           <div className="sets-apart-section">
-            <h2 className="sets-apart-subheader">Exceptional Service</h2>
+            <h2 className="sets-apart-subheader">Unmatched Reliability</h2>
             <p className="sets-apart-text">
-              Bon Voyage is synonymous with unparalleled customer service. Our
-              dedicated team works around the clock to ensure your every query is
-              met with prompt and friendly assistance.
+              At Skylink Airways, reliability is our hallmark. From on-time
+              departures to consistent service, we aim to exceed expectations
+              every step of the way.
+            </p>
+            <h2 className="sets-apart-subheader">A Global Network</h2>
+            <p className="sets-apart-text">
+              We connect you to over 100 destinations worldwide, offering seamless
+              connections and unforgettable travel experiences.
             </p>
           </div>
           <div className="separator"></div>
+
           <h1 className="mission-header">Our Mission</h1>
           <p className="mission-text">
-            To redefine travel by providing a seamless, stress-free experience that
-            turns every journey into an adventure. We strive to be the preferred
-            choice for travelers worldwide, known for our reliability,
-            transparency, and commitment to customer satisfaction.
+            To empower every traveler with exceptional air travel experiences.
+            Skylink Airways is committed to safety, sustainability, and creating
+            connections that matter.
           </p>
           <div className="separator"></div>
-          <h1 className="join-us-header">Join Us on this Voyage</h1>
+
+          <h1 className="join-us-header">Join Skylink Airways</h1>
           <p className="join-us-text">
-            Bon Voyage invites you to join us on this extraordinary journey.
-            Whether you're a frequent flyer or planning a once-in-a-lifetime trip,
-            we are here to transform your travel dreams into reality. Let's soar to
-            new horizons together. Thank you for choosing Bon Voyage – Where Every
-            Journey Begins and Adventure Awaits!
+            Whether you're traveling for business or leisure, Skylink Airways is
+            here to make your journey extraordinary. From the moment you book to
+            the time you land, we promise a travel experience that soars beyond
+            expectations. Thank you for choosing Skylink Airways – Where the Sky
+            is Not the Limit, but the Beginning!
           </p>
         </div>
       </div>
