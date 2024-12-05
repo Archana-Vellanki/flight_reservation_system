@@ -2,17 +2,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 body {
     font-family: 'Your Preferred Font', sans-serif;
     line-height: 1.6;
+
 }
 
 body, html {
     height: 100%;
-}
+    background-color: #fff; /* Pale Blue */
 
+
+}
 .seat-selection-container {
     padding: 20px;
     display: flex;
@@ -66,9 +70,9 @@ body, html {
 }
 
 .seat.booked {
-    background-color: #000000;
-    color: #ffffff;
-    border-color: #000000;
+    background-color:#f3e5f5;
+    color: #000000;
+    border-color: #e8f5e9;
     pointer-events: none;
 }
 

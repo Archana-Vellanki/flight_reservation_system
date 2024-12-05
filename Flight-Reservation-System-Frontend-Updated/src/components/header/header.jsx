@@ -78,7 +78,7 @@ const Header = ({ tabs, onShowTab }) => {
   };
 
   const toolbarStyle = {
-    backgroundColor: "black",
+    backgroundColor: "#5c4033",
   };
 
   const location = useLocation();
@@ -89,6 +89,7 @@ const Header = ({ tabs, onShowTab }) => {
     // For example, using react-router-dom:
     // history.push(tabs[newValue].path);
   };
+
 
   const LoginMenuHTMLComponent = () => {
     return (

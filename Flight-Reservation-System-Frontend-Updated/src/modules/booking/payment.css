@@ -8,14 +8,14 @@ body {
 .container {
     max-width: 600px;
     margin: 20px auto;
-    background-color: #fff;
+    background-color: #f3e5f5;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
 .flight-details-container {
-    background-color: #fff;
+    background-color: #f3e5f5;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);

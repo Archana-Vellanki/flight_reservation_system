@@ -1,46 +1,23 @@
-# Bon Voyage: Flight booking System Web Application
-![Alt text](public/BonVoyage.jpeg)
-<br>
+Project Overview
+Skylink Airways is a modern web-based flight reservation system designed to provide users with a seamless travel experience. Our platform focuses on efficiency, reliability, and customer satisfaction, making the journey of booking flights and managing itineraries both simple and enjoyable.
 
-This project has been developed using Java Spring boot and ReactJS and is running node v12.0.0 and npm v7.19.0
-<br>
-
-# Installation and Setup Instructions
-Clone down this repository. You will need `node` and `npm` installed globally on your machine.
-
-### Installation:
-Install npm modules:
-`npm install`
-
-To Start Server:
-`npm start`
-
-To Visit App:
-`localhost:3000`
-
-In case of any errors (ensure the number of vulnerabilities is less than 10 - sometimes running twice helps!)
-`npm audit fix --force`
-
-Installing database component for react
-`npm install react-data-table-component`
-
-Landing page is `home.jsx`, add all routes in it
-
-<br>
-
-# Creating google authentication
-1. Login to https://console.cloud.google.com/
-2. Go to APIs & Services, click on Credentials in the left pane
-3. Click on create credentials, select OAuth Client ID request
-4. Select application as Web Application, give it a name
-5. Provide Authorised JavaScript origins as 
-"http://127.0.0.1:3000"
-"http://localhost:3000"
-6. Provide Authorised redirect URIs as  
-"http://127.0.0.1:3000/callback"
-"http://localhost:3000/callback"
+Features
+Flight Booking: Quickly search and reserve flights to over 100 destinations worldwide.
+User Management: Login/Sign-up via username/password or Google OAuth integration for a personalized experience.
+Manage Bookings: Update or cancel your reservations with ease.
+Responsive Design: Fully optimized for desktop and mobile devices.
+Help & Support: Dedicated support section to assist users with queries.
+Secure Transactions: All sensitive data is encrypted to ensure user privacy and security
 
 
-
-## Frontend Web Pages
-
+Installation
+1. Clone the Repository:
+   git clone https://github.com/Anwitha2806/Flight_Reservation_Project_Updated.git
+   cd Flight_Reservation_Project_Updated
+   2 .Install Dependencies: Ensure you have Node.js and npm installed, then run:
+   npm install
+   Environment Variables: Create a .env file in the project root and add the following variables:
+   REACT_APP_GOOGLE_CLIENT_ID=your-google-client-id
+   3.Start the frontend Development Server:
+   npm start
+   Open your browser and navigate to http://localhost:3000

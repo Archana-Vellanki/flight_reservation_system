@@ -1,10 +1,10 @@
 .container {
-    background-color: #f2f2f2;
-    border: 2px solid #000;
-    border-radius: 15px;
-    padding: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
+  background-color: #e3f2fd; /* Light blue background */
+  border: 2px solid #424242; /* Dark gray border */
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly darker shadow */
+}
   
   .form-group {
     margin-bottom: 20px;
@@ -17,8 +17,8 @@
   }
   
   .btn-primary {
-    background-color: #000;
-    color: #fff;
+    background-color: #007bff; /* Blue background */
+    color: #ffffff;          /* White text */
   }
   
   #cityError {
@@ -62,7 +62,7 @@
 .container .card {
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    background: #fff;
+    background: #fef5e7;
     border-radius: 8px;
     padding: 20px; /* Added padding */
 }
